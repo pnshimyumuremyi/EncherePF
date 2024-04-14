@@ -1,0 +1,21 @@
+
+.containerLinks {
+	float: left;
+	font-size: 1.5rem;
+    padding: 10px;
+
+}
+
+.active {
+	background-color: var(--bg);
+	color: var(--text);
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+}
+.link{
+    text-decoration: none;
+    color: azure;
+}
+

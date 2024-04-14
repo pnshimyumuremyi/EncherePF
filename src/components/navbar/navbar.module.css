@@ -1,0 +1,22 @@
+.container {
+	padding: 1rem;
+	background-color: var(--vt-c-black);
+	color: var(--vt-c-white-soft);
+	float: left;
+    width:1800px;
+    margin-left: 0;
+	
+}
+
+.logo {
+	font-size: 2rem;
+    float: left;
+    margin-left: 0;
+}
+.link{ 
+    float: left;
+    gap: "30px";
+    text-align: "center" ;
+    margin-right: 0;
+}
+
