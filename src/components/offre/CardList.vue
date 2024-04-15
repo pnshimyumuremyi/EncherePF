@@ -114,5 +114,6 @@ onBeforeMount(() => {
   color: #6c757d; /* Couleur du texte du footer */
   padding: 10px 0; /* Espacement intérieur du footer */
 }
+
   </style>
   

@@ -27,7 +27,7 @@
             <div class="card-footer">
             <div class="d-flex justify-content-between">
                 <button @click="router.push(`/updateEnchere/${card.id}`)" class="btn btn-primary"><span><i class="fas fa-edit text-white"></i> Modifier</span></button>
-                <button @click="removeEnchere(card.id)" class=" btn btn-danger"><span><i class="fas fa-trash-alt text-white"></i> Supprimer</span></button>
+                <button @click="showConfirmation(card.id)" class=" btn btn-danger"><span><i class="fas fa-trash-alt text-white"></i> Supprimer</span></button>
                 <button @click="router.push(`/offre/enchere/${card.id}`)" class=" btn btn-success"><span><i class="fas fa-comment text-white"></i> Offres</span></button>
                 <button @click="router.push(`/commentaire/enchere/${card.id}`)" class=" btn btn-success"><span><i class="fas fa-comment text-white"></i> commentaire</span></button>
                 
@@ -90,6 +90,14 @@ onBeforeMount(() => {
       console.log("Il y a erreur de lectures des enchères", err)
     );
 });
+function showConfirmation(id) {
+            // Affiche une boîte de dialogue de confirmation avec un message personnalisé
+            if (confirm("Êtes-vous sûr de vouloir continuer ?")) {
+                removeEnchere(id);
+            } else {
+                
+            }
+        }
   </script>
   
   <style>
